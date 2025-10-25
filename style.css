@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the parent elements are not interfering with sticky */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    position: relative; /* This ensures sticky works */
+}
+
+/* NavBar Styles */
+nav {
+    width: 100vw;
+    height: 9vh;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    z-index: 1000; /* Makes sure the navbar stays on top */
+}
+
+/* Ensure the logo and navbar are styled properly */
+nav img {
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+
+.navbar h3 {
+    margin: 0 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+.navbarEnd {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.navbarEnd i {
+    font-size: 20px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 75vh;
+    /* background-color: blue; */
+    position: absolute;
+    top: 62px;
+    left: 0;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    scroll-behavior: smooth;
+}
+
+main img {
+    flex: 0 0 auto; /* Prevent shrinking, allow horizontal scroll */
+    width: 100%;
+    margin: 0;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 0;
+}
+
+
+main::-webkit-scrollbar {
+    height: 8px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+main::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.models{
+    height: 90vh;
+    width: 100%;
+    left: 0;
+    /* background-color: red; */
+    position: absolute;
+    display: flex;
+    top: 82.6vh;
+    margin: 0 auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden;
+    padding-top: 45px;
+    padding-left: 50px;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.model1{
+    height: 90%;
+    width: 60%;
+    /* background-color: blue; */
+    border-radius: 20px;
+    margin: 10px 10px;
+    flex: 0 0 auto; /* Prevent shrinking, allow horizontal scroll */
+}
+.model1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.models::-webkit-scrollbar {
+    height: 8px;
+}
+
+.models::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.models::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.box{
+    width: 100%;
+    height: 60vh;
+    /* background-color: yellow; */
+    position: absolute;
+    top: 171vh;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.box .boxes{
+    width: 90%;
+    height: 70%;
+    background-color: rgba(242, 238, 238, 0.838);
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-top: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.boxes h1{
+    font-size: 7vh;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.boxes h4{
+    font-size: 3.5vh;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.boxes img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.box2{
+    height: 80%;
+    width: 100%;
+    /* background-color: black; */
+    position: absolute;
+    top: 230vh;
+    left: 0;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    padding: 0 10px;
+}
+
+.box2 #firstbox{
+    width: 70%;
+    height: 100%;
+    background-color: rgba(242, 238, 238, 0.838);
+    margin-top: 0;
+    left: 0;
+    margin-left: 0;
+    padding-top: 0px;
+    padding-left: 0;
+}
+
+#firstbox video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box2 #secondbox{
+    width: 30%;
+    height: 100%;
+    background-color: rgba(242, 238, 238, 0.838);
+    margin-top: 0;
+    right: 0;
+    padding-top: 0px;
+    padding-right: 0;
+}
+
+
+#secondbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    position: relative;
+    top: 310vh; /* adjust this based on your content height */
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #5c5c5c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: black;
+}
+
+
